@@ -3,19 +3,22 @@
 
 try:
     # Input: Get age from the user
-    user_input = int(input("Please enter your age: "))
+    user_input = input("Please enter your age: ")
+    age = int(user_input)
 
-    # Check the age category
-    if user_input < 0:
-        raise ValueError("Age cannot be negative.")
-    elif user_input < 13:
-        print("You are categorized as: Child")
-    elif user_input < 20:
-        print("You are categorized as: Teenager")
-    elif user_input < 60:
-        print("You are categorized as: Adult")
+    # Check if the age is negative
+    if age < 0:
+        print("Invalid input: Age cannot be negative.")
     else:
-        print("You are categorized as: Senior")
+        # Check the age category
+        if age < 13:
+            print("You are categorized as: Child")
+        elif 13 <= age <= 19:
+            print("You are categorized as: Teenager")
+        elif 20 <= age <= 59:
+            print("You are categorized as: Adult")
+        else:
+            print("You are categorized as: Senior")
         
 except ValueError:
     print("Invalid input: Age cannot be a non-number.")

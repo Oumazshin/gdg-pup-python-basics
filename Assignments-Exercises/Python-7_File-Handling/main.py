@@ -9,7 +9,7 @@ except FileNotFoundError:
 
 # Step 2: Write to a new file
 with open('newfile.txt', 'w') as file:
-    file.write("This is a new file, like New Year New Me XD.\n")
+    file.write("This is a new file, like New Year New Me XD. Sobrang sarap ko >w<\n")
     print("\nNew file created with content:")
 
 # Step 3: Verify content in the new file by reading it

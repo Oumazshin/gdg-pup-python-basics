@@ -11,7 +11,7 @@ class Car:
         return f"This car is a {self.year} {self.make} {self.model}."
 
 # Create an instance of the Car class
-my_car = Car("Toyota", "Corolla", 2020)
+my_car = Car("Honda", "Civic", 2022)
 
 # Print the description of the car
 print(my_car.describe())

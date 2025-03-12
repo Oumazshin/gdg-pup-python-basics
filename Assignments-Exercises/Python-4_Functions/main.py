@@ -7,7 +7,12 @@ def create_greeting(name):
     Returns:
         str: The greeting message.
     """
-    return f"Hello {name}, welcome to the GDG Web Development Team! You're doing great, and I truly believe that someday you'll be an amazing developer. Life may feel challenging right now, and programming can be overwhelming at times, but remember, all your hard work will pay off in the end. Keep pushing forward, you're on the right path!"
+    # Return a formatted greeting message
+    return (f"Hello {name}, welcome to the GDG Web Development Team! "
+            "You're doing great, and I truly believe that someday you'll be an amazing developer. "
+            "Life may feel challenging right now, and programming can be overwhelming at times, "
+            "but remember, all your hard work will pay off in the end. Keep pushing forward, "
+            "you're on the right path!")
 
 # Main program
 try:
@@ -19,4 +24,5 @@ try:
     print(f"The greeting message is: {greeting}")
 
 except ValueError:
+    # Handle the case where the input is not a valid string
     print("Invalid input: Please enter a valid name.")
